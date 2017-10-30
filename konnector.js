@@ -20,10 +20,6 @@ module.exports = baseKonnector.createNew({
   vendorLink: 'https://www.numericable.fr/',
 
   category: 'isp',
-  color: {
-    hex: '#53BB0F',
-    css: '#53BB0F'
-  },
 
   dataType: ['bill'],
 
