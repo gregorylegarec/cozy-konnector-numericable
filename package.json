@@ -10,14 +10,14 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "0.19",
     "cozy-konnector-libs": "^3.0.8",
     "node-polyglot": "^2.2.2",
     "request": "^2.81.0",
     "request-json": "^0.6.2"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node --expose-gc index.js",
     "oauth": "env-cmd ./data/env.js cozy-authenticate manifest.konnector",
     "predev": "npm run oauth && env-cmd ./data/env.js cozy-init-dev-account ./data/account.txt ./data/env_fields.json",
     "dev": "env-cmd ./data/env_development.js npm start",
